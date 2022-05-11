@@ -1,0 +1,106 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+hr {
+    border: 1px solid #EEEEEE;
+}
+div.header {
+    padding: 38px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+div.header > div > img {
+    padding: 20px 20px 20px 20px;
+    width: 150px;
+} 
+ul.menu li {
+    display: inline;
+}
+ul.menu li a {
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: #555555;
+    font-size: 11px;
+    font-weight: 100;
+}
+ul.menu li:last-child a  {
+    color: #FC459B;
+}
+div.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+div.hero div.container h5 {
+    color: #FF348B;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+div.container {
+    margin-right: 0%;
+}
+
+div.hero div.container h2 {
+    /* color: #4B4B4B; */
+    font-size: 50px;
+    font-display: bold;
+    line-height: 60px;
+}
+div.hero div.container p {
+    font-size: 12px;
+    font-weight: 100;
+    ;
+}
+
+div.hero div.pic img {
+    width: 420px;
+}
+
+div.hero div.container button {
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    border-color: #FD894E;
+    background-color: white;
+    font-size: 11px;
+}
+div.banner {
+    /* display: flex;
+    flex-direction: column;
+    align-items: baseline ;
+    justify-content: flex-end; */
+    /* height: 150px; */
+    border-radius: 12px;
+    background: rgb(252,91,140);
+    background: linear-gradient(71deg, rgba(252,91,140,1) 0%, rgba(252,105,113,1) 18%, rgba(253,128,67,1) 49%, rgba(185,201,141,1) 85%, rgba(156,231,172,1) 100%);
+    margin: 40px;
+    padding: 80px 20px 30px 40px;
+
+}
+div.banner h2 {
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0;
+}
+div.banner p {
+   
+    font-size: 11px;
+    font-weight: 100;
+}
+div.logos {
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    justify-content: row;
+    justify-content: space-between;
+ 
+}
+div.logos > div > img {
+    width: 90px;
+   size: 10px;
+}
