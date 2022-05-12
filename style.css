@@ -17,9 +17,10 @@ div.header {
 
 }
 
-div.header > div > img {
+div.header  div  img {
     padding: 20px 20px 20px 20px;
-    width: 180px;
+    width: 120px;
+
 
 } 
 ul.menu li {
@@ -52,8 +53,8 @@ div.container {
 }
 
 div.hero div.container h2 {
-    /* color: #4B4B4B; */
-    font-size: 50px;
+    color: #4B4B4B;
+    font-size: 60px;
     font-display: bold;
     line-height: 60px;
 }
@@ -63,8 +64,15 @@ div.hero div.container p {
     ;
 }
 
+div.hero div.pic  {
+    display: contents;
+}
+
 div.hero div.pic img {
-    width: 420px;
+    position: absolute;
+    right: 90px;
+    top: 50px;
+    width: 480px;
     overflow-x: hidden;
 }
 
@@ -77,14 +85,10 @@ div.hero div.container button {
     font-size: 11px;
 }
 div.banner {
-    /* display: flex;
-    flex-direction: column;
-    align-items: baseline ;
-    justify-content: flex-end; */
-    /* height: 150px; */
     border-radius: 12px;
     background: rgb(252,91,140);
     background: linear-gradient(71deg, rgba(252,91,140,1) 0%, rgba(252,105,113,1) 18%, rgba(253,128,67,1) 49%, rgba(185,201,141,1) 85%, rgba(156,231,172,1) 100%);
+    margin-top: 80px;
     margin: 40px;
     padding: 80px 20px 30px 40px;
 
@@ -303,24 +307,36 @@ div.footer {
         font-size: 22px;
         line-height: 25px;
     }
+    
     div.hero2 div.container {
         width: 80%;
     }
     .hero2 {
         position: relative;
     }
+    div.container {
+        margin-right: 100px;
+    }
     div.hero2 div.pic img {
         width: 140px;
     }
-    .hero .pic,
-    .hero2 .pic {
+    div.hero div.pic {
         position: absolute;
-        right: -200px;
-        top: -20px;
+        right: 80px;
+        top: 20px;
+        overflow-x: hidden;
     }
-    .hero2 .pic {
-        right: -80px;
-        top: 22px;
+    div.hero div.pic img {
+        position: absolute;
+        right: -226px;
+        top: 33px;
+        overflow-x: hidden;
+        
+    }
+    div.hero2 div.pic {
+        position: absolute;
+        right: -36px;
+        top: -30px;
     }
 
     div.banner {
@@ -391,8 +407,6 @@ div.footer {
     }
     footer div.footer span:last-child {
        display: none;
-       
-
-   }
+    }
 
 }
