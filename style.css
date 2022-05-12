@@ -20,6 +20,7 @@ div.header {
 div.header > div > img {
     padding: 20px 20px 20px 20px;
     width: 180px;
+
 } 
 ul.menu li {
     display: inline;
@@ -64,6 +65,7 @@ div.hero div.container p {
 
 div.hero div.pic img {
     width: 420px;
+    overflow-x: hidden;
 }
 
 div.hero div.container button {
@@ -280,12 +282,7 @@ div.footerinfo div.list {
     padding: 10px 30px 30px 30px;
     gap: 10px;
 }
-/* div.footerinfo div.list div.about ul li,
-div.footerinfo div.list div.nft ul li,
-div.footerinfo div.list div.contact ul li,
-div.footerinfo div.list div.social ul li, {
-    list-style-type: none;
-} */
+
 div.footer {
     display: flex;
     justify-content: space-between;
@@ -293,6 +290,7 @@ div.footer {
     font-weight: 100;
     color: #6C6C6C;
     font-size: 13px;
+    margin-bottom: 60px;
 }
 
 @media screen and (max-width: 768px) {
@@ -331,9 +329,13 @@ div.footer {
     }
     div.logos {
         flex-wrap: wrap;
+        padding: 20px 0px 20px 40px;
+        margin-top: 14px;
+        margin-bottom: 14px;
     }
     div.logos div {
         flex-basis: 50%;
+        padding-bottom: 13px;
     }
     div.logos div:nth-child(4) {
         display: none;
@@ -348,26 +350,49 @@ div.footer {
     }
   
     div.footerinfo {
-        /* display: flex;
-        flex-direction: column; */
+        display: flex;
+        flex-direction: column;
+        height: auto;
     }
     div.footerinfo div.box{
-        max-width: 390px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        max-width: 400px;
+    }
+    div.footerinfo div.box div.list {
+        display: grid;
+        grid-template-columns: 130px 130px;
+        grid-template-rows: 175px 175px;
+        gap: 10px;
+        padding: 0;
+    }
+    div.footerinfo div.box div.list ul {
+        padding: 0;
+    }
+    div.footerinfo div.box div.list ul li.bold {
+        font-style: bold;
     }
     div.footerinfo div.box div {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
+  
     div.footerinfo div.list div {
         max-width: 160px;
         display: flex;
         flex-wrap: wrap;
         
     }
-    div.footerinfo div.list div
+    footer div.footer span:first-child {
+        font-size: 18px;
+        font-weight: 100;
+        color: #8E8E8E;
+        
+ 
+    }
+    footer div.footer span:last-child {
+       display: none;
+       
+
+   }
 
 }
