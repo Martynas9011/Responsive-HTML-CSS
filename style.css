@@ -20,6 +20,7 @@ div.header {
 div.header > div > img {
     padding: 20px 20px 20px 20px;
     width: 180px;
+    overflow-x: hidden;
 } 
 ul.menu li {
     display: inline;
@@ -347,27 +348,42 @@ div.footer {
         font-size: 16px;
     }
   
+    div.footerinfo div.footerlogo {
+        margin: 50px;
+    }
     div.footerinfo {
-        /* display: flex;
-        flex-direction: column; */
+        display: block;
+
+        /* flex-direction: column;
+        flex-wrap: wrap; */
+ 
     }
     div.footerinfo div.box{
-        max-width: 390px;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        
     }
     div.footerinfo div.box div {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-    }
-    div.footerinfo div.list div {
-        max-width: 160px;
-        display: flex;
-        flex-wrap: wrap;
         
     }
-    div.footerinfo div.list div
+    div.footerinfo div.box div.list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 0 0 0;
+        
+    }
+    div.footerinfo div.box div.list div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+        
+    
+    footer div.footer span:last-child {
+        display: none;
+
+    }
 
 }
