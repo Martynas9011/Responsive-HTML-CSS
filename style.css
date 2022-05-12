@@ -15,7 +15,7 @@ div.header {
 
 div.header > div > img {
     padding: 20px 20px 20px 20px;
-    width: 150px;
+    width: 180px;
 } 
 ul.menu li {
     display: inline;
@@ -98,11 +98,14 @@ div.logos {
     display: flex;
     justify-content: row;
     justify-content: space-between;
+    align-items: baseline;
  
 }
 div.logos > div > img {
-    width: 90px;
-   size: 10px;
+    height: 30px;
+    width: auto;
+   
+   
 }
 div.carousel {
     display: flex;
@@ -123,33 +126,29 @@ div.carousel div.info div.top {
     justify-content: space-between;
     align-content: space-around;
 }
-div.carousel div.info div.top span {    
-    order: 2;
-    
-}
+
 div.carousel div.info div.mid {    
     display: flex;
     height: 40px;
     justify-content: space-between;
     align-content: space-around;
 }
-div.carousel div.info div.mid span {    
-    order: 2;
-    
+div.carousel div.info div.mid div.eth img {
+    width: 18px;
+    padding-left: 0;
 }
+
 div.carousel div.info div.bottom {    
     display: flex;
     justify-content: space-between;
     align-content: space-around;
 }
-div.carousel div.info div.bottom span {    
-    order: 2;
-    
-}
+
 
 div.carousel div span.price {
    width: 12px;
 }
+
 div.carousel div.info {
     background-color: #EEEEEE;
     height: 100px;
@@ -157,11 +156,11 @@ div.carousel div.info {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px; 
 }
-div.carousel div.info div {
+/* div.carousel div.info div {
     display: grid;
   
     padding: 6px 0px;
-}
+} */
 div.carousel div.info div span {
    padding: 10px 10px 0px 10px;
 
@@ -180,7 +179,9 @@ div.mid {
 div.mid span.price {
     padding-left: 0px;
 }
-
+div.price img {
+    width: 12px;
+}
 div.buyline div.carousel div span {
     color: #6C6C6C;
 }
@@ -191,6 +192,11 @@ div.buyline div.info>div>span.name {
     color: #121212;
     
 }
+/* div.buyline div.carousel div.info  div.mid div.eth {
+    display: inline;    
+    
+    
+} */
 
 div.hero2 {
     display: flex;
@@ -216,11 +222,72 @@ div.hero2 div.pic img {
 }
 
 div.hero2 div.container button {
-    width: 100px;
-    height: 38px;
-    border-radius: 20px;
+    width: 120px;
+    height: 45px;
+    border-radius: 30px;
     border-color: #FD894E;
     background-color: white;
+}
+div.footerinfo {
+    display: flex;
+    padding: 60px 60px 60px 60px;
+    justify-content: space-between;
+}
+div.footerinfo div.list div.about>ul>li {
+    list-style-type: none;
+    font-weight: 100;
+    padding: 10px 10px 10px 10px;
+    
+}
+div.footerinfo div.list div.about>ul {
+    padding: 10px 20px 0px 10px;
+}
+
+div.footerinfo div.list div.nft>ul>li {
+    list-style-type: none;
+    font-weight: 100;
+    padding: 10px 10px 10px 10px;
+}
+div.footerinfo div.list div.contact>ul>li {
+    list-style-type: none;
+    font-weight: 100;
+    padding: 10px 10px 10px 10px;
+}
+div.footerinfo div.list div.social>ul>li {
+    list-style-type: none;
+    font-weight: 100;
+    padding: 10px 10px 10px 10px;
+}
+div.footerlogo {
+    font-weight: 100;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    align-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+div.footerlogo img {
+    width: 130px;
+}
+div.footerinfo div.list {
+    display: flex;
+    padding: 10px 30px 30px 30px;
+    gap: 10px;
+}
+/* div.footerinfo div.list div.about ul li,
+div.footerinfo div.list div.nft ul li,
+div.footerinfo div.list div.contact ul li,
+div.footerinfo div.list div.social ul li, {
+    list-style-type: none;
+} */
+div.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+    font-weight: 100;
+    color: #6C6C6C;
+    font-size: 13px;
 }
 
 @media screen and (max-width: 768px) {
